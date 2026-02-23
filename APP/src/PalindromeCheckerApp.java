@@ -1,9 +1,15 @@
-public class PalindromeCheckerApp {
+import java.util.Scanner;
+
+public class UseCase2PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
-        // Hardcoded string
-        String str = "madam";
+        // Scanner for user input
+        Scanner sc = new Scanner(System.in);
+
+        // Take input from user
+        System.out.print("Enter a string: ");
+        String str = sc.nextLine();
 
         // Reverse the string
         String rev = "";
@@ -17,5 +23,7 @@ public class PalindromeCheckerApp {
         } else {
             System.out.println(str + " is NOT a Palindrome");
         }
+
+        sc.close();
     }
 }
